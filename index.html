@@ -163,19 +163,20 @@
         </div>
     </div>
 
-    <!-- Hidden Audio -->
-    <audio id="bg-music" loop>
-        <source src="song.mp3" type="audio/mpeg">
-    </audio>
-
+    <audio id="bg-music" loop preload="auto">
+    <source src="./song.mp3" type="audio/mpeg">
+</audio>
+    
     <div id="music-control" class="music-btn hidden" onclick="toggleMusic()">
         <i id="music-icon" class="fas fa-compact-disc animate-spin text-pink-500 text-xl"></i>
     </div>
 
     <!-- Main Content -->
     <div id="main-content" class="opacity-0 transition-opacity duration-1000">
-        
-       <!-- Hero: Beautiful Visuals -->
+     
+        <button onclick="document.getElementById('bg-music').play()">Play Music Test</button>
+      
+        <!-- Hero: Beautiful Visuals -->
         <section class="min-h-screen flex flex-col items-center justify-center pt-24 px-6 relative">
             <div class="image-glow mb-12 shadow-[0_0_60px_rgba(219,39,119,0.4)]">
                 <div class="w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-white/20">
