@@ -94,6 +94,16 @@
             100% { background-position: 0% 50%; }
         }
 
+
+    /* Anime Section Transition */
+        .anime-card {
+            transition: all 0.5s ease;
+            filter: grayscale(30%);
+        }
+        .anime-card:hover {
+            filter: grayscale(0%);
+            transform: scale(1.02);
+        }
         /* Splash Screen */
         #splash-screen {
             position: fixed;
@@ -156,7 +166,7 @@
                 <i class="fas fa-heart text-pink-400 text-3xl absolute -top-2 -right-4 animate-bounce"></i>
             </div>
             <h2 class="elegant text-5xl md:text-6xl text-white mb-6">Floral, A world awaits you...</h2>
-            <p class="text-slate-400 mb-10 tracking-widest uppercase text-xs">To the girl who feels like spring 🥰</p>
+            <p class="text-slate-400 mb-10 tracking-widest uppercase text-xs">To the girl who feels like spring</p>
             <button onclick="startExperience()" class="btn-romantic text-white font-bold px-12 py-5 rounded-full tracking-tighter text-lg">
                 UNLOCK MY HEART
             </button>
@@ -219,6 +229,14 @@
     <p class="fade-line">You would be spring living quietly in my heart. 🌸</p>  
     <p class="fade-line mt-6 font-bold text-pink-500">Forever Yours.</p>  
 </div>
+
+   <div class="order-1 md:order-2">
+                    <div class="anime-card rounded-[3rem] overflow-hidden shadow-2xl border border-white/10">
+                        <!-- High-end Anime Aesthetic Image -->
+                        <img src="floral.jpg" class="w-full h-64 md:h-full object-cover">
+                    </div>
+                </div>
+            </div>
 </section>
   <!-- The "Love Letter" Section -->
         <section class="py-20 px-6">
